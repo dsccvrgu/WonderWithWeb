@@ -1,181 +1,332 @@
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+/*********************************** top container *************************************/
+.top-container {
+  background-color: #ff5555;
+  position: relative;
+  padding-top: 100px;
+}
+.top-container h1 {
+  color: #f7f7f7;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #94c7c7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+/************************************** Middle container *******************************/
+
+.profile img{
+  height: 250px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+
+
+/* ************************************ skills **********************************/
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.skills{
+  background-color: #ff5555;
+  padding: 30px 10px;
+}
+.skills h2{
+  color: white;
+}
+
+
+.code-icon {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.web-icon {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* ******************************* certifications *********************************/
+.certifications ul li{
+  display: inline-block;
+  margin: 30px auto;
+}
+.certifications ul{
+  padding: 0;
+}
+.certifications ul li img{
+  width: 400px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.certifications ul li img:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* ********************************* projects *****************************/
+
+.projects{
+  background-color: #ff5555;
+  padding: 30px 10px;
+  text-align: center;
+}
+.projects h2{
+  color: white;
+}
+.projects ul{
+  text-align: center;
+  padding: 0;
+}
+.projects li{
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  height: 300px;
+  width: 250px;
+  background-color: #646464;
+  background-image: url("../images/project.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+.projects h3{
+  opacity: 0;
+  color: white;
+  font-weight: 900;
+}
+.projects p{
+  opacity: 0;
+  color: white;
+  padding: 10px;
+}
+.projects li:hover{
+  background-image: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.projects li:hover h3{
+  opacity: 1;
+  transition: 0.8s;
+}
+.projects li:hover p{
+  opacity: 1;
+  transition: 0.8s;
+}
+
+
+/************************************** contact me ************************************/
+
+.contact-me{
+  padding: 30px;
+}
+.btn{
+  background: #ff5555;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover{
+  background: white;
+  color: #ff5555;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/************************************** footer ****************************************/
+
+.bottom-container{
+  background-color: #ff5555;
+  padding: 50px 0 20px;
+}
+.copyright{
+  color: white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 780px) {
+  .footer h4{
+    margin-top: 30px;
   }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    text-align: center;
-  }
-  /*********************************** top container *************************************/
-  .top-container {
-    background-color: #ff5555;
-    position: relative;
-    padding-top: 100px;
-  }
-  .top-container h1 {
-    color: #f7f7f7;
-    font-size: 5.625rem;
-    margin: 50px auto 0 auto;
-    font-family: 'Sacramento', cursive;
-  }
-  
-  h2 {
-    color: #94c7c7;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding-bottom: 10px;
-  }
-  
-  /************************************** Middle container *******************************/
-  
-  .profile img{
-    height: 250px;
-  }
-  
-  .intro {
-    width: 30%;
-    margin: auto;
-  }
-  
-  h3 {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  p {
-    line-height: 2;
-  }
-  
-  hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-  }
-  
-  .middle-container {
-    margin: 100px 0;
-  }
-  
+}
+
 /* -------------------------- media queries ------------------------ */
 
 @media only screen and (max-width: 600px) {
-    body {
-      align-items: center;
-    }
-    .mountain{
-      width: 100%;
-    }
-    .intro{
-      width: 90%;
-      font-size: 20px;
-    }
+  body {
+    align-items: center;
   }
-  
-  /* ------------------------------- navbar -------------------------------------------- */
-  .Navbar{
-    height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #ff5555;
-    position: fixed;
-    z-index: 100000;
+  .mountain{
     width: 100%;
   }
-  .Navbar ul{
+  .intro{
+    width: 90%;
+    font-size: 20px;
+  }
+  .skill-row{
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------- navbar -------------------------------------------- */
+.Navbar{
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #ff5555;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+}
+.Navbar ul{
+  float: right;
+}
+.Navbar ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+.Navbar li a{
+  color: rgb(255, 219, 219);
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+.Navbar a:hover{
+  color:rgb(184, 182, 182);
+  transition: 0.3s;
+}
+
+/* ------------------------------- responsive navbar ----------------------------------- */
+li{
+  list-style-type: none;
+}
+nav input{
+  display: none;
+}
+i{
+  display: none;
+  margin: 10px;
+}
+.resRev{
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .footer h4{
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 940px) {
+  .resRev i{
+    display: block;
+    color: white;
+  }
+  .Navbar{
+    display: none;
+  }
+  .resRev{
+    display: block;
+    background: #ff5555;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  label{
     float: right;
   }
-  .Navbar ul li{
+  .resRev ul{
+    text-align: center;
+    position: fixed;
+    background: #ff5555;
+    top: 50px;
+    left: -120%;
+    width: 100%;
+    margin: 0 auto;
     display: inline-block;
-    margin: 0 10px;
+    transition: all 0.3s ease;
+    z-index: 10000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
-  .Navbar li a{
+  .resRev li a{
     color: rgb(255, 219, 219);
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
   }
-  .Navbar a:hover{
+  .resRev a:hover{
     color:rgb(184, 182, 182);
     transition: 0.3s;
   }
-  
-  /* ------------------------------- responsive navbar ----------------------------------- */
-  li{
-    list-style-type: none;
+  #click:checked ~ ul{
+    left: -8%;
   }
-  nav input{
-    display: none;
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
   }
-  i{
-    display: none;
-    margin: 10px;
+  nav ul li{
+    margin: 20px 0;
   }
-  .resRev{
-    display: none;
+  nav ul li a{
+    font-size: 20px;
+    font-weight: bold;
   }
-  
-  @media screen and (max-width: 780px) {
-    .footer h4{
-      margin-top: 30px;
-    }
+  .certifications ul li img{
+    width: 250px;
   }
-  
-  
-  @media (max-width: 940px) {
-    .resRev i{
-      display: block;
-      color: white;
-    }
-    .Navbar{
-      display: none;
-    }
-    .resRev{
-      display: block;
-      background: #ff5555;
-      position: fixed;
-      width: 100%;
-      height: 50px;
-      z-index: 10000;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    label{
-      float: right;
-    }
-    .resRev ul{
-      text-align: center;
-      position: fixed;
-      background: #ff5555;
-      top: 50px;
-      left: -120%;
-      width: 100%;
-      margin: 0 auto;
-      display: inline-block;
-      transition: all 0.3s ease;
-      z-index: 10000;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    .resRev li a{
-      color: rgb(255, 219, 219);
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      text-decoration: none;
-    }
-    .resRev a:hover{
-      color:rgb(184, 182, 182);
-      transition: 0.3s;
-    }
-    #click:checked ~ ul{
-      left: -8%;
-    }
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d";
-    }
-    nav ul li{
-      margin: 20px 0;
-    }
-    nav ul li a{
-      font-size: 20px;
-      font-weight: bold;
-    }
-  }
+}
